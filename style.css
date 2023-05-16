@@ -153,7 +153,7 @@ body {
     transform: translateX(-100%);
   }
   to {
-    transform: translateX(450%);
+    transform: translate(450%);
   }
 }
 .text {
