@@ -1,12 +1,12 @@
 // script.js
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // Establecer alpha en true para fondo transparente
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('scene-container').appendChild(renderer.domElement);
 
 // Crea un cubo que representará tu cara
-const cubeGeometry = new THREE.BoxGeometry(2, 2, 2);
+const cubeGeometry = new THREE.BoxGeometry(3, 3, 3);
 
 // Carga la textura de tu foto
 const textureLoader = new THREE.TextureLoader();
